@@ -115,7 +115,7 @@ def main():
             (x, y, w, h) = cv2.boundingRect(c)
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
             lowest_closest_distance = float("inf")
-            rectangle_center = (((2 * x) + w)/2, ((2 * y) + h)/2)
+            rectangle_center = ( int(((2 * x) + w)/2) ,  int(((2 * y) + h)/2) )
             cv2.circle(frame, rectangle_center, 2, (0, 0, 255))
             closest_person_index = None
 
