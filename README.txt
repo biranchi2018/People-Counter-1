@@ -1,6 +1,8 @@
 There are two different methods of using this program. The first is to run it on video footage which you can do from the terminal. To do so use the following command:
 
 python motion_detector.py --video [file path to video]
+For example :python motion_detector.py -v videos/solo_person_walking.mp4
+
 
 To run the algorithm to a camera that is attached to the machine that you're running it on just run the program in the IDE or:
 
